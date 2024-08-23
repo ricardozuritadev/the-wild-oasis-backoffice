@@ -3,6 +3,7 @@ import styled from "styled-components";
 import GlobalStyles from "styles/GlobalStyles";
 
 import Button from "ui/Button";
+import Heading from "ui/Heading";
 
 const StyledApp = styled.div`
     background-color: white;
@@ -13,9 +14,8 @@ export default function App() {
         <>
             <GlobalStyles />
             <StyledApp>
-                <Button $variation="danger" $size="large">
-                    Test
-                </Button>
+                <Heading as="h1">Hello World!</Heading>
+                <Button>Test</Button>
             </StyledApp>
         </>
     );
