@@ -1,11 +1,22 @@
+import styled from "styled-components";
+
+import GlobalStyles from "styles/GlobalStyles";
+
 import Button from "ui/Button";
+
+const StyledApp = styled.div`
+    background-color: white;
+`;
 
 export default function App() {
     return (
-        <div>
-            <Button $variation="danger" $size="small">
-                Test
-            </Button>
-        </div>
+        <>
+            <GlobalStyles />
+            <StyledApp>
+                <Button $variation="danger" $size="large">
+                    Test
+                </Button>
+            </StyledApp>
+        </>
     );
 }
