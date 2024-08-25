@@ -9,8 +9,8 @@
 ![Supabase](https://img.shields.io/badge/supabase-3DCF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
 # The Wild Oasis - Management Dashboard
-Custom-build web portal to allow users to manage hotel bookings, cabins and guests from The Wild Oasis company. This is part of "The Ultimate React Course" from Jonas Schmedtmann.
-This web portal was developed with plain React as it will be used "internally" as a tool inside the company and it will be hidden behind a login. For this reason, this web portal doesn't need to be optimized for SEO and doesn't need to use SSR (Server Side Rendering).
+Custom-build web management dashboard to allow users to manage hotel bookings, cabins and guests from The Wild Oasis company. This is part of "The Ultimate React Course" from Jonas Schmedtmann.
+This management dashboard was developed with plain React as it will be used "internally" as a tool inside the fake "Wild Oasis" company and it will be hidden behind a login. For this reason, this site doesn't need to be optimized for SEO and doesn't need to use SSR (Server Side Rendering).
 
 ## Index
 
