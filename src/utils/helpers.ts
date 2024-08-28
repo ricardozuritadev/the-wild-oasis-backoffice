@@ -23,7 +23,21 @@ export const getToday = function (options = { end: "" }) {
     return today.toISOString();
 };
 
-export const formatCurrency = (value: number) =>
-    new Intl.NumberFormat("en", { style: "currency", currency: "USD" }).format(
-        value
-    );
+type formatCurrencyProps = {
+    value: number | null;
+    region?: "en" | "es";
+    currency?: "USD" | "EUR";
+};
+
+export const formatCurrency = ({
+    value,
+    region = "es",
+    currency = "EUR"
+}: formatCurrencyProps) => {
+    if (!value) return 0;
+
+    return new Intl.NumberFormat(region, {
+        style: "currency",
+        currency
+    }).format(value);
+};
